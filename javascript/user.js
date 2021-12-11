@@ -20,7 +20,7 @@ Set user in local storage
 */
 setUser = (user) => {
     if (typeof(Storage) !== "undefined") {
-        window.localStorage.setItem('user', JSON.stringify(person));
+        window.localStorage.setItem('user', JSON.stringify(user));
     } else {
         console.log("localstorage not supported by current browser")
     }
